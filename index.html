@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Homework #4: D3 Simple - CSE 578 - Fall 2022</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <link href="https://fonts.cdnfonts.com/css/oretz" rel="stylesheet">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
+        
+        
+</head>
+    </head>
+    <body style="background-color:#1b263b;color: white; font-family: oretz;">
+        <div >
+            <div class="container" style="margin:auto;" >
+                <div class="row"style="border:1px solid white;">
+                    <h1 class="text-center" >Space Box</h1>
+                    <h3 class="text-center" >Made by - Gangey Patel(gpatel8@asu.edu)</h3>
+                    <h5 class="text-center"> Reduce page size to 70% for better view</h5>
+                </div>
+            <div class="row"style="border:1px solid white; font-size: 20px;">
+                <div class ="form-check form-switch" id="chkbx" style="display:flex; justify-content: center;">
+                    <label for="checkbox" class="form-check-label" style="margin-right: 15px;">Catagorywise</label>
+                    <input class="form-check-input" type="checkbox" id="checkbox" onchange="isChecked()" style="margin: 5px 10px 5px 10px;">
+                    <label for="checkbox" class="form-check-label" style="margin-left: 15px;">Planetwise</label>
+                </div>
+                
+            </div>
+            <div id="my_dataviz" class="row" >
+                <svg id ="svg" class="column" style="border:1px solid white;width:80%;"></svg>
+                <div class="column" style="border:1px solid white;width:20%;">
+                    <div class="row" id="buttonblock" >
+                        <div class="column" id="buttonholder" style="display:flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; padding: 30px;">
+                            <button id="button" class="btn btn-secondary" onclick="buttonisclicked()">Reset Graph</button>
+                        </div>
+                        <hr style="height:4px;border-width:0;color:white;background-color:white">
+                    </div>
+                    <div class="row" id="infoblock1" style="height: 90%;">
+                        <div class="row" id="infoblock" style="height: 30%; padding-bottom:30px; padding-top:30px; margin-right:20px;"></div>
+                        <hr style="height:4px;border-width:0;color:white;background-color:white">
+                        <div class="row" id="instructions" style="height:70%; margin: 20px 10px 10px 10px; font-size:18px; display: flex; justify-content: center; padding-top: 50px;">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+         <!-- end of the container div -->
+    </body>
+</html> 
